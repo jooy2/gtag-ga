@@ -1,6 +1,6 @@
 {
 	"name": "gtag-ga",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Google Analytics 4 (gtag.js) for NodeJS ES Module. Simple installation to send page views or event tracking.",
 	"main": "index.js",
 	"type": "module",
