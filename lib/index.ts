@@ -12,7 +12,7 @@ declare global {
 export default class GtagGA {
 	static initializeGtag(
 		trackingId: string,
-		config: ControlParams | EventParams | ConfigParams | CustomParams
+		config?: ControlParams | EventParams | ConfigParams | CustomParams
 	): void {
 		if (typeof window === 'undefined') {
 			throw new Error(
