@@ -1,8 +1,13 @@
-# gtag-ga
+# 📊 gtag-ga
 
 Google Analytics 4 (gtag.js) for NodeJS ES Module. Simple installation to send page views or event tracking.
 
 > [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jooy2/gtag-ga/blob/master/LICENSE) ![Programming Language Usage](https://img.shields.io/github/languages/top/jooy2/gtag-ga) ![Commit Count](https://img.shields.io/github/commit-activity/y/jooy2/gtag-ga) ![Line Count](https://img.shields.io/tokei/lines/github/jooy2/gtag-ga) [![npm downloads](https://img.shields.io/npm/dm/gtag-ga.svg)](https://www.npmjs.com/package/gtag-ga) [![npm latest package](https://img.shields.io/npm/v/gtag-ga/latest.svg)](https://www.npmjs.com/package/gtag-ga) ![npm maintenance](https://img.shields.io/npms-io/maintenance-score/gtag-ga) ![npm quality](https://img.shields.io/npms-io/quality-score/gtag-ga) ![minified size](https://img.shields.io/bundlephobia/min/gtag-ga) ![github repo size](https://img.shields.io/github/repo-size/jooy2/gtag-ga) [![Followers](https://img.shields.io/github/followers/jooy2?style=social)](https://github.com/jooy2) ![Stars](https://img.shields.io/github/stars/jooy2/gtag-ga?style=social)
+
+- ⚡️ Lightweight modules & quick setup & fast performance
+- ⚡️ Zero dependency packages. ESM packages available everywhere
+- ⚡️ Support for the latest NodeJS, Google Analytics 4
+- ⚡️ Support for TypeScript
 
 # Installation
 
