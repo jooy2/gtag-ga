@@ -1,0 +1,70 @@
+{
+	"name": "gtag-ga",
+	"version": "1.0.1",
+	"description": "Google Analytics 4 (gtag.js) for NodeJS ES Module. Simple installation to send page views or event tracking.",
+	"main": "index.js",
+	"type": "module",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"typesVersions": {
+		"*": {
+			"index.d.ts": [
+				"dist/index.d.ts"
+			]
+		}
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"scripts": {
+		"build": "npm run format:fix && tsc && npm run minify",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"minify": "terser dist/index.js --config-file .terserrc -o dist/index.js",
+		"prepare": "npm run build",
+		"format": "prettier .",
+		"format:fix": "prettier . --write"
+	},
+	"author": "Jooy2 <jooy2.contact@gmail.com>",
+	"homepage": "https://github.com/jooy2/gtag-ga",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jooy2/gtag-ga.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jooy2/gtag-ga/issues"
+	},
+	"keywords": [
+		"ga",
+		"utility",
+		"tool",
+		"google",
+		"google-analytics",
+		"googleanalytics",
+		"gtag",
+		"ga4",
+		"universal-analytics",
+		"gtagjs",
+		"gtag.js",
+		"google-tag-manager",
+		"googletagmanager",
+		"node-ga4",
+		"ga4-gtag"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/gtag.js": "^0.0.12",
+		"@types/node": "^18.14.0",
+		"@typescript-eslint/eslint-plugin": "^5.52.0",
+		"@typescript-eslint/parser": "^5.52.0",
+		"eslint": "^8.34.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^8.6.0",
+		"prettier": "^2.8.4",
+		"terser": "^5.16.4",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.5"
+	}
+}
