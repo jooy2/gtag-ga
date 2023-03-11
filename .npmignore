@@ -10,7 +10,6 @@ Thumbs.db
 # Project files
 .github/
 lib/
-test/
 CHANGELOG.md
 CODE_OF_CONDUCT.md
 
@@ -21,6 +20,5 @@ CODE_OF_CONDUCT.md
 .eslintrc.json
 .prettierignore
 .prettierrc
-.mocharc.json
 .editorconfig
 tsconfig.json
