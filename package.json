@@ -64,7 +64,7 @@
 		"eslint-config-prettier": "^9.0.0",
 		"prettier": "^3.0.3",
 		"terser": "^5.22.0",
-		"ts-node": "^10.9.1",
+		"ts-node": "^10.9.2",
 		"typescript": "^5.2.2"
 	}
 }
