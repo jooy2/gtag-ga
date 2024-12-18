@@ -1,17 +1,17 @@
 # 📊 gtag-ga
 
-Google Analytics 4 (gtag.js) for NodeJS ES Module. Simple installation to send page views or event tracking.
+Google Analytics 4 (gtag.js) for Node.js ES Module. Simple installation to send page views or event tracking.
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jooy2/gtag-ga/blob/master/LICENSE) ![Programming Language Usage](https://img.shields.io/github/languages/top/jooy2/gtag-ga) ![Commit Count](https://img.shields.io/github/commit-activity/y/jooy2/gtag-ga) [![npm downloads](https://img.shields.io/npm/dm/gtag-ga.svg)](https://www.npmjs.com/package/gtag-ga) [![npm latest package](https://img.shields.io/npm/v/gtag-ga/latest.svg)](https://www.npmjs.com/package/gtag-ga) ![minified size](https://img.shields.io/bundlephobia/min/gtag-ga) ![github repo size](https://img.shields.io/github/repo-size/jooy2/gtag-ga) [![Followers](https://img.shields.io/github/followers/jooy2?style=social)](https://github.com/jooy2) ![Stars](https://img.shields.io/github/stars/jooy2/gtag-ga?style=social)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jooy2/gtag-ga/blob/main/LICENSE) ![Programming Language Usage](https://img.shields.io/github/languages/top/jooy2/gtag-ga) ![Commit Count](https://img.shields.io/github/commit-activity/y/jooy2/gtag-ga) [![npm downloads](https://img.shields.io/npm/dm/gtag-ga.svg)](https://www.npmjs.com/package/gtag-ga) [![npm latest package](https://img.shields.io/npm/v/gtag-ga/latest.svg)](https://www.npmjs.com/package/gtag-ga) ![minified size](https://img.shields.io/bundlephobia/min/gtag-ga) [![Followers](https://img.shields.io/github/followers/jooy2?style=social)](https://github.com/jooy2) ![Stars](https://img.shields.io/github/stars/jooy2/gtag-ga?style=social)
 
 - ⚡️ Lightweight modules & quick setup & fast performance
 - ⚡️ Zero dependency packages. ESM packages available everywhere
-- ⚡️ Support for the latest NodeJS, Google Analytics 4
+- ⚡️ Support for the latest Node.js, Google Analytics 4
 - ⚡️ Support for TypeScript
 
 # Installation
 
-`gtag-ga` requires `Node.js 12.x` or higher, and the repository is serviced through **[NPM](https://npmjs.com)**.
+`gtag-ga` requires `Node.js 16.x` or higher, and the repository is serviced through **[NPM](https://npmjs.com)**.
 
 After configuring the node environment, you can simply run the following command.
 
@@ -28,20 +28,10 @@ $ pnpm install gtag-ga
 
 # How to use
 
-### Recommend: Using named import (Multiple utilities in a single require)
-
 ```javascript
 import { initializeGtag } from 'gtag-ga';
 
 initializeGtag('G-XXXXXXXXXX'); // Your tracking code
-```
-
-### Using whole class (multiple utilities simultaneously with one object)
-
-```javascript
-import GtagGA from 'gtag-ga';
-
-GtagGA.initializeGtag('G-XXXXXXXXXX'); // Your tracking code
 ```
 
 # Methods
@@ -67,10 +57,10 @@ Learn more in the official `gtag.js` documentation at: https://developers.google
 gtag('event', 'eventName', { 'key': 'value' });
 ```
 
-# Contribute
+## Contributing
 
-You can report issues on [GitHub Issue Tracker](https://github.com/jooy2/gtag-ga/issues). You can also request a pull to fix bugs and add frequently used features.
+Anyone can contribute to the project by reporting new issues or submitting a pull request. For more information, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-# License
+## License
 
-Copyright © 2023 [Jooy2](https://jooy2.com) <[jooy2.contact@gmail.com](mailto:jooy2.contact@gmail.com)> Released under the MIT license.
+Please see the [LICENSE](LICENSE) file for more information about project owners, usage rights, and more.

@@ -12,6 +12,8 @@ Thumbs.db
 lib/
 CHANGELOG.md
 CODE_OF_CONDUCT.md
+SECURITY.md
+CONTRIBUTING.md
 
 # For development
 .git/

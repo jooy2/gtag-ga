@@ -16,7 +16,7 @@
 		}
 	},
 	"engines": {
-		"node": ">=12.0.0"
+		"node": ">=16.0.0"
 	},
 	"scripts": {
 		"build": "npm run format:fix && tsc && npm run minify",
@@ -27,7 +27,7 @@
 		"format": "prettier .",
 		"format:fix": "prettier . --write"
 	},
-	"author": "Jooy2 <jooy2.contact@gmail.com>",
+	"author": "CDGet <jooy2.contact@gmail.com>",
 	"homepage": "https://github.com/jooy2/gtag-ga",
 	"repository": {
 		"type": "git",
