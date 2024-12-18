@@ -9,38 +9,32 @@ declare global {
 	}
 }
 
-export default class GtagGA {
-	static initializeGtag(
-		trackingId: string,
-		config?: ControlParams | EventParams | ConfigParams | CustomParams
-	): void {
-		if (typeof window === 'undefined') {
-			throw new Error(
-				`'window' object not found, make sure you're using initialize in the right place.`
-			);
-		}
-		if (typeof window.gtag !== 'undefined') {
-			return;
-		}
-
-		const script = document.createElement('script');
-
-		script.async = true;
-		script.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
-
-		document.head.insertBefore(script, document.head.firstChild);
-
-		window.dataLayer = window.dataLayer || [];
-
-		GtagGA.gtag('js', new Date());
-		GtagGA.gtag('config', trackingId, config);
-	}
-
-	static gtag(...args: any[]): void {
-		window.dataLayer.push(args);
-	}
+export function gtag(...args: any[]): void {
+	window.dataLayer.push(args);
 }
 
-export { GtagGA };
+export function initializeGtag(
+	trackingId: string,
+	config?: ControlParams | EventParams | ConfigParams | CustomParams
+): void {
+	if (typeof window === 'undefined') {
+		throw new Error(
+			`'window' object not found, make sure you're using initialize in the right place.`
+		);
+	}
+	if (typeof window.gtag !== 'undefined') {
+		return;
+	}
 
-export const { initializeGtag, gtag } = GtagGA;
+	const script = document.createElement('script');
+
+	script.async = true;
+	script.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
+
+	document.head.insertBefore(script, document.head.firstChild);
+
+	window.dataLayer = window.dataLayer || [];
+
+	gtag('js', new Date());
+	gtag('config', trackingId, config);
+}
