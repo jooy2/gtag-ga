@@ -17,7 +17,7 @@ CONTRIBUTING.md
 
 # For development
 .git/
-.terserrc
+terser.config.json
 .eslintignore
 .eslintrc.json
 .prettierignore

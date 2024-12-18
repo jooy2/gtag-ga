@@ -22,7 +22,7 @@
 		"build": "npm run format:fix && tsc && npm run minify",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"minify": "terser dist/index.js --config-file .terserrc -o dist/index.js",
+		"minify": "terser-glob 'dist/**/*.js' --config-file terser.config.json",
 		"prepare": "npm run build",
 		"format": "prettier .",
 		"format:fix": "prettier . --write"
@@ -63,7 +63,7 @@
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^9.0.0",
 		"prettier": "^3.0.3",
-		"terser": "^5.22.0",
+		"terser-glob": "^1.1.0",
 		"ts-node": "^10.9.1",
 		"typescript": "^5.2.2"
 	}
